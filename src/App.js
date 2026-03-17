@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import StickerList from "./components/StickerList/StickerList";
 import Choice from "./components/Choice/Choice";
 
+import style from "./App.module.css"
+
 class App extends Component {
 
   state = {
@@ -15,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>Sticker App</h1>
+        <h1 className={style.title}>Sticker App</h1>
 
         <StickerList onSelect={this.handleSelectSticker} />
 
